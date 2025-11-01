@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Your Favourite Music Here</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="brand"><img src="logo.png" alt="Spotify">Spotify</li>
+            <li>Home</li>
+            <li>About</li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="songList">
+            <h1>Best of Tarang - No Copyright Sounds</h1>
+            <div class="songItemContainer">
+
+                <div class="songItem">
+                    <img src="covers/cover1.jpeg" alt="1">
+                    <span class="songName">I'M Done</span>
+                    <span class="songlistplay"><span class="timestamp">02:39 <i id="0" class="fa-solid songItemPlay fa-circle-play"></i></span></span>
+                </div>
+
+                <div class="songItem">
+                    <img src="covers/2.jpg" alt="2">
+                    <span class="songName">Tum agar saath </span>
+                    <span class="songlistplay"><span class="timestamp">06:31 <i id="1" class="fa-solid songItemPlay fa-circle-play"></i></span></span>
+                </div>
+
+                <div class="songItem">
+                    <img src="covers/cover4" alt="3">
+                    <span class="songName">Meherbani</span>
+                    <span class="songlistplay"><span class="timestamp">04:03 <i id="2" class="fa-solid songItemPlay fa-circle-play"></i></span></span>
+                </div>
+
+                <div class="songItem">
+                    <img src="covers/cover3" alt="4">
+                    <span class="songName">Jab se tere naina</span>
+                    <span class="songlistplay"><span class="timestamp">04:44 <i id="3" class="fa-solid songItemPlay fa-circle-play"></i></span></span>
+                </div>
+
+                <div class="songItem">
+                    <img src="covers/8.jpg" alt="5">
+                    <span class="songName">Afreen Afreen</span>
+                    <span class="songlistplay"><span class="timestamp">05:48 <i id="4" class="fa-solid songItemPlay fa-circle-play"></i></span></span>
+                </div>
+
+                <div class="songItem">
+                    <img src="covers/raat kali.jpg" alt="6">
+                    <span class="songName">Raat Kali Khawab Mein</span>
+                    <span class="songlistplay"><span class="timestamp">03:11 <i id="5" class="fa-solid songItemPlay fa-circle-play"></i></span></span>
+                </div>
+
+            </div>
+        </div>
+        <div class="songBanner"></div>
+    </div>
+
+    <div class="bottom">
+        <input type="range" name="range" id="myProgressBar" min="0" value="0" max="100">
+        <div class="icons">
+            <i id="previous" class="fa-solid fa-3x fa-backward"></i>
+            <i id="masterPlay" class="fa-solid fa-3x fa-circle-play"></i>
+            <i id="next" class="fa-solid fa-3x fa-forward"></i>
+        </div>
+
+        <!-- 🔽 This part updated -->
+        <div class="songInfo">
+  <img src="playing.gif" width="42px" id="gif">
+  <span id="currentSongName">I'M Done - Maan Panu</span>
+  <span id="currentTimeDisplay">0:00 / 0:00</span>
+
+  <!-- new animated waveform -->
+  <div class="waveform" id="waveform">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+  </div>
+</div>
+
+    </div>
+
+    <script src="https://kit.fontawesome.com/ce653b23b3.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
